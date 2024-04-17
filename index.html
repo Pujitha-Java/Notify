@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        .container {
+            background-color: #000000;
+            padding: 20px;
+        }
+
+        .n-heading {
+            font-family: "Roboto";
+            font-size: 30px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .x-button {
+            background-color: #ffffff;
+            color: #74C0FC;
+            font-weight: bold;
+        }
+
+        .today-heading {
+            color: #727064;
+            font-family: "Roboto";
+            font-size: 20px;
+            color: #ffffff;
+        }
+
+        .card-container {
+            background-color: #000000;
+            margin-bottom: 20px;
+            border-color: #fff;
+            border-style: solid;
+            border-width: 2px;
+            padding: 15px;
+        }
+
+        .icon {
+            font-size: 25px;
+        }
+
+        .card-heading {
+            font-family: "Roboto";
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .card-para {
+            font-family: "Roboto";
+            font-size: 15px;
+            color: #fff;
+        }
+
+        .card-time {
+            font-family: "Roboto";
+            font-size: 12px;
+            text-align: right;
+            color: #fff;
+        }
+
+        .clear {
+            color: #FF0000;
+        }
+
+        .clear-container {
+            background-color: #000000;
+            border-radius: 5px;
+            margin-top: 30px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: #fff;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="d-flex flex-row justify-content-between align-items-center mb-3">
+            <p class="n-heading">Notifications</p>
+            <button class="x-button">x Close</button>
+        </div>
+        <div>
+            <h1 class="today-heading">Today</h1>
+            <div class="card-container">
+                <div class="d-flex flex-row align-items-center">
+                    <i class="fas fa-running icon" style="color: #74C0FC;"></i>
+                    <h1 class="card-heading pl-1">Training</h1>
+                    <p class="ml-auto card-time">2 min ago</p>
+                </div>
+                <p class="card-para">Hey! Do you remember about choosing your training regime?</p>
+            </div>
+            <div class="card-container">
+                <div class="d-flex flex-row align-items-center">
+                    <i class="fas fa-comment icon" style="color: #74C0FC;"></i>
+                    <h1 class="card-heading pl-1">Messages</h1>
+                    <p class="ml-auto card-time">1 hour ago</p>
+                </div>
+                <p class="card-para">You have a new message</p>
+            </div>
+        </div>
+        <div>
+            <h1 class="today-heading mt-3">Yesterday</h1>
+            <div class="card-container">
+                <div class="d-flex flex-row align-items-center">
+                    <i class="fas fa-book icon" style="color: #74C0FC;"></i>
+                    <h1 class="card-heading pl-1">Forms</h1>
+                    <p class="ml-auto card-time">12:47</p>
+                </div>
+                <p class="card-para">Remember about filing out the COVID-19 form before the next appointment tomorrow</p>
+            </div>
+            <div class="card-container">
+                <div class="d-flex flex-row align-items-center">
+                    <i class="fas fa-running icon" style="color: #74C0FC;"></i>
+                    <h1 class="card-heading pl-1">Training</h1>
+                    <p class="ml-auto card-time">12:43</p>
+                </div>
+                <p class="card-para">We're glad you've decided to use our training system! Let's now set a complete list of things</p>
+            </div>
+        </div>
+        <div class="clear-container d-flex flex-row justify-content-center align-items-center">
+            <i class="fas fa-times-circle p-1" style="color: #FF0000;"></i>
+            <p class="clear mb-0">Clear all notifications</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
